@@ -65,7 +65,7 @@ public class MainController {
 	    n.setCheckList(optional.get());
 	    itemRepository.save(n);
 	    return "Saved";
-	};
+	}
 	// Si no existe el CheckList, error
 	return "CheckList does not exist";
     
@@ -83,7 +83,7 @@ public class MainController {
 		item.check();
 		itemRepository.save(item);
 	    return "Item's new done status is " + item.getDone().toString();
-	};
+	}
 	
 	// Si no existe, error
 	return "Item does not exist";
